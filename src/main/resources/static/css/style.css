@@ -215,3 +215,89 @@ body {
     background: rgba(255, 255, 255, 0.07);
     color: var(--text-secondary);
 }
+
+/* About Page */
+
+.about-main { 
+     max-width: 950px;
+     margin: 4rem auto; 
+     padding: 3.5rem; 
+     background: var(--card-bg); 
+     backdrop-filter: blur(16px); 
+     border: 1px solid var(--card-border); 
+     border-radius: 24px; 
+     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4), 0 0 35px rgba(99, 102, 241, 0.08); 
+     position: relative; 
+     overflow: hidden; } 
+
+/* Main title */ 
+.about-main h1 { 
+    position: relative; 
+    margin: 0; 
+    font-size: 2.8rem; 
+    line-height: 1.2; 
+    font-weight: 800; 
+    color: var(--text-muted);
+} 
+
+/* Paragraphs */ 
+.about-main p { 
+    position: relative; 
+    color: var(--text-primary); 
+    font-size: 1rem; 
+    line-height: 1.8; 
+    margin-bottom: 1.2rem; 
+} 
+/* Intro paragraph */ 
+.about-main .about-intro { 
+    color: #cbd5e1; 
+    font-size: 1.1rem; 
+    line-height: 1.8; 
+} 
+/* Feature cards */ 
+.about-features { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.2rem; 
+    margin-top: 2.8rem; 
+} 
+/* Individual feature */ 
+.about-feature-card { 
+    background: rgba(15, 23, 42, 0.55); 
+    border: 1px solid var(--card-border); 
+    border-radius: 16px; 
+    padding: 1.5rem; 
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; 
+} 
+.about-feature-card:hover { 
+    transform: translateY(-6px); 
+    border-color: var(--card-border-active); 
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35), 0 0 18px rgba(99, 102, 241, 0.12); 
+} 
+
+/* Feature titles */ 
+.about-feature-card h2 { 
+    margin: 0 0 0.6rem; 
+    color: var(--text-primary); 
+    font-size: 1.05rem; 
+    font-weight: 700; 
+} 
+/* Feature descriptions */ 
+.about-feature-card p { 
+    margin: 0; 
+    color: var(--text-muted); 
+    font-size: 0.88rem; 
+    line-height: 1.6; 
+} 
+/* Responsive */
+@media (max-width: 768px) { 
+    .about-main { margin: 2rem 1rem; 
+        padding: 2rem 1.5rem; 
+    } 
+.about-main h1 { 
+    font-size: 2.1rem; 
+    } 
+.about-features { 
+    grid-template-columns: 1fr; 
+    } 
+}

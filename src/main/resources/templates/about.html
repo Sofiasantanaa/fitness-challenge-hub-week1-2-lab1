@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About - FitSquad Hub</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+    <main class="about-main">
+
+        <h1 th:text="${pageTitle}">Welcome to the FitSquad Hub!</h1>
+
+        <p class="about-intro">
+            FitSquad Hub is a community fitness platform where squad members
+            can participate in fun workout challenges and stay motivated together
+        </p>
+
+        <p>
+            Members can track the duration of their workouts, earn XP reward
+            points, which can later be redeemed through partner companies for
+            supplements and sports gear, and participate in challenges across
+            various categories and difficulty levels, ranging from Beginner to Advanced
+        </p>
+
+        <p>
+            FitSquad Hub is designed to make fitness more engaging and social
+            by encouraging members to stay active, connect with the community,
+            and build consistent exercise habits
+        </p>
+
+        <section class="about-features">
+
+            <div class="about-feature-card">
+                <h2>Track Workouts</h2>
+                <p>
+                    Keep track of your workout duration and stay consistent
+                    with your fitness goals.
+                </p>
+            </div>
+
+            <div class="about-feature-card">
+                <h2>Earn XP</h2>
+                <p>
+                    Complete challenges and earn XP reward points as you
+                    progress through your fitness journey.
+                </p>
+            </div>
+
+            <div class="about-feature-card">
+                <h2>Join Challenges</h2>
+                <p>
+                    Take on challenges across different categories and
+                    difficulty levels from Beginner to Advanced.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
